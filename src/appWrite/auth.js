@@ -49,8 +49,8 @@ export class AuthService {
       return loginStatus;
     } catch (e) {
       console.log("Get user", e);
+      return null;
     }
-    return null;
   }
 
   async logout() {
